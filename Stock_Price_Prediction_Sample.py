@@ -61,7 +61,7 @@ y_train = np.reshape(y_train, (train_size, 1))
 # Initializing the RNN
 regressor = Sequential()
 
-# Adding fist LSTM layer and Drop out Regularization
+# Adding first LSTM layer and Drop out Regularization
 regressor.add(LSTM(units=1000, return_sequences=True, input_shape = (X_train.shape[1], 1)))
 regressor.add(Dropout(.2))
 
