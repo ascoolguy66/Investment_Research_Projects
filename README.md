@@ -12,9 +12,12 @@
 * The opening price as taken as predictior variable, and the Closing price was taken as target variable.
 * The objective was to predict the closing price based on the opening price for a selected stock.
 * A four layers LSTM-RNN model was built as follows:
-** Input Layer: 1000 inputs and 1000 outputs.
-. First LSTM Layer: 1000 inputs and 500 outputs
-. First LSTM Layer: 500 inputs and 250 outputs
-. First LSTM Layer: 250 inputs and 125 outputs
-. Output Layer: 125 inputs and 1 output.
-. Dropout rate is set at 20% at each LSTM layer.
+``` 
+ . Input Layer: 1000 inputs and 1000 outputs.
+ . First LSTM Layer: 1000 inputs and 500 outputs
+ . First LSTM Layer: 500 inputs and 250 outputs
+ . First LSTM Layer: 250 inputs and 125 outputs
+ . Output Layer: 125 inputs and 1 output.
+ . Dropout rate is set at 20% at each LSTM layer.
+
+```
